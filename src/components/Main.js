@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Main(props) {
   const inQueue = props.bars.inQueue;
-  const grammar1 = inQueue == 1 ? "is" : "are";
-  const grammar2 = inQueue == 1 ? "person" : "people";
+  const grammar1 = inQueue === 1 ? "is" : "are";
+  const grammar2 = inQueue === 1 ? "person" : "people";
 
   let peopleArray = [];
   for (let i = 0; i < inQueue; i++) {
